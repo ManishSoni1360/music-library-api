@@ -32,7 +32,7 @@ app.use("/albums", albumRoute);
 app.use("/tracks", trackRoute);
 app.use("/favorites", favoriteRoute);
 
-const port = Number(process.env.PORT) || 3000;
-app.listen(port, "0.0.0.0", () => {
-  console.log(`Server running on port ${port}`);
-});
+const port = process.env.PORT || 4000;
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
